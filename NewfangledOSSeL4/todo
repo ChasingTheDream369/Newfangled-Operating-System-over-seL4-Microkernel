@@ -1,0 +1,8 @@
+add sync protection to threads.c
+figure out the issue with killing threads are not directly our creators, after killing other threads
+return gracefully when failing to allocate resources for creating a new thread
+exit the program gracefully when it causes some sort of fault
+kill a program in the middle of a sleep
+check all the addresses (of a buffer passed in from the user) are valid upfront
+wait on any process
+

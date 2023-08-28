@@ -1,0 +1,296 @@
+The target system is: Generic -  - seL4CPU
+The host system is: Linux - 4.19.0-0.bpo.17-amd64 - x86_64
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler: /home/cs9242/crossdev/gcc-9-aarch64-none-linux-gnu/bin/aarch64-linux-gnu-gcc 
+Build flags: 
+Id flags:  
+
+The output was:
+0
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+
+The C compiler identification is GNU, found in "/tmp_amd/kamen/export/kamen/1/z5284381/comp9242/group-08/build_32/CMakeFiles/3.17.3/CompilerIdC/a.out"
+
+Determining if the C compiler works passed with the following output:
+Change Dir: /tmp_amd/kamen/export/kamen/1/z5284381/comp9242/group-08/build_32/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/home/cs9242/bin/ninja cmTC_9e98d && [1/2] Building C object CMakeFiles/cmTC_9e98d.dir/testCCompiler.c.obj
+[2/2] Linking C static library libcmTC_9e98d.a
+
+
+
+Detecting C compiler ABI info compiled with the following output:
+Change Dir: /tmp_amd/kamen/export/kamen/1/z5284381/comp9242/group-08/build_32/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/home/cs9242/bin/ninja cmTC_9d255 && [1/2] Building C object CMakeFiles/cmTC_9d255.dir/CMakeCCompilerABI.c.obj
+Using built-in specs.
+COLLECT_GCC=/home/cs9242/crossdev/gcc-9-aarch64-none-linux-gnu/bin/aarch64-linux-gnu-gcc
+Target: aarch64-none-linux-gnu
+Configured with: /tmp/dgboter/bbs/rhev-vm2--rhe6x86_64/buildbot/rhe6x86_64--aarch64-none-linux-gnu/build/src/gcc/configure --target=aarch64-none-linux-gnu --prefix= --with-sysroot=/aarch64-none-linux-gnu/libc --with-build-sysroot=/tmp/dgboter/bbs/rhev-vm2--rhe6x86_64/buildbot/rhe6x86_64--aarch64-none-linux-gnu/build/build-aarch64-none-linux-gnu/install//aarch64-none-linux-gnu/libc --with-bugurl=https://bugs.linaro.org/ --enable-gnu-indirect-function --enable-shared --disable-libssp --disable-libmudflap --enable-checking=release --enable-languages=c,c++,fortran --with-gmp=/tmp/dgboter/bbs/rhev-vm2--rhe6x86_64/buildbot/rhe6x86_64--aarch64-none-linux-gnu/build/build-aarch64-none-linux-gnu/host-tools --with-mpfr=/tmp/dgboter/bbs/rhev-vm2--rhe6x86_64/buildbot/rhe6x86_64--aarch64-none-linux-gnu/build/build-aarch64-none-linux-gnu/host-tools --with-mpc=/tmp/dgboter/bbs/rhev-vm2--rhe6x86_64/buildbot/rhe6x86_64--aarch64-none-linux-gnu/build/build-aarch64-none-linux-gnu/host-tools --with-isl=/tmp/dgboter/bbs/rhev-vm2--rhe6x86_64/buildbot/rhe6x86_64--aarch64-none-linux-gnu/build/build-aarch64-none-linux-gnu/host-tools --enable-fix-cortex-a53-843419 --with-pkgversion='GNU Toolchain for the A-profile Architecture 9.2-2019.12 (arm-9.10)'
+Thread model: posix
+gcc version 9.2.1 20191025 (GNU Toolchain for the A-profile Architecture 9.2-2019.12 (arm-9.10)) 
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_9d255.dir/CMakeCCompilerABI.c.obj' '-c' '-mlittle-endian' '-mabi=lp64'
+ /tmp_amd/adams/export/adams/1/cs9242/crossdev/gcc-9-aarch64-none-linux-gnu/bin/../libexec/gcc/aarch64-none-linux-gnu/9.2.1/cc1 -quiet -v -iprefix /tmp_amd/adams/export/adams/1/cs9242/crossdev/gcc-9-aarch64-none-linux-gnu/bin/../lib/gcc/aarch64-none-linux-gnu/9.2.1/ -isysroot /tmp_amd/kamen/export/kamen/1/z5284381/comp9242/group-08/build_32/CMakeFiles/CMakeTmp /tmp_amd/adams/export/adams/1/cs9242/cmake/share/cmake-3.17/Modules/CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mlittle-endian -mabi=lp64 -auxbase-strip CMakeFiles/cmTC_9d255.dir/CMakeCCompilerABI.c.obj -version -o /tmp/ccijsB5X.s
+GNU C17 (GNU Toolchain for the A-profile Architecture 9.2-2019.12 (arm-9.10)) version 9.2.1 20191025 (aarch64-none-linux-gnu)
+	compiled by GNU C version 4.8.1, GMP version 4.3.2, MPFR version 3.1.6, MPC version 1.0.3, isl version isl-0.15-1-g835ea3a-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+ignoring duplicate directory "/tmp_amd/adams/export/adams/1/cs9242/crossdev/gcc-9-aarch64-none-linux-gnu/bin/../lib/gcc/../../lib/gcc/aarch64-none-linux-gnu/9.2.1/include"
+ignoring nonexistent directory "/tmp_amd/kamen/export/kamen/1/z5284381/comp9242/group-08/build_32/CMakeFiles/CMakeTmp/usr/local/include"
+ignoring duplicate directory "/tmp_amd/adams/export/adams/1/cs9242/crossdev/gcc-9-aarch64-none-linux-gnu/bin/../lib/gcc/../../lib/gcc/aarch64-none-linux-gnu/9.2.1/include-fixed"
+ignoring duplicate directory "/tmp_amd/adams/export/adams/1/cs9242/crossdev/gcc-9-aarch64-none-linux-gnu/bin/../lib/gcc/../../lib/gcc/aarch64-none-linux-gnu/9.2.1/../../../../aarch64-none-linux-gnu/include"
+ignoring nonexistent directory "/tmp_amd/kamen/export/kamen/1/z5284381/comp9242/group-08/build_32/CMakeFiles/CMakeTmp/usr/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /tmp_amd/adams/export/adams/1/cs9242/crossdev/gcc-9-aarch64-none-linux-gnu/bin/../lib/gcc/aarch64-none-linux-gnu/9.2.1/include
+ /tmp_amd/adams/export/adams/1/cs9242/crossdev/gcc-9-aarch64-none-linux-gnu/bin/../lib/gcc/aarch64-none-linux-gnu/9.2.1/include-fixed
+ /tmp_amd/adams/export/adams/1/cs9242/crossdev/gcc-9-aarch64-none-linux-gnu/bin/../lib/gcc/aarch64-none-linux-gnu/9.2.1/../../../../aarch64-none-linux-gnu/include
+End of search list.
+GNU C17 (GNU Toolchain for the A-profile Architecture 9.2-2019.12 (arm-9.10)) version 9.2.1 20191025 (aarch64-none-linux-gnu)
+	compiled by GNU C version 4.8.1, GMP version 4.3.2, MPFR version 3.1.6, MPC version 1.0.3, isl version isl-0.15-1-g835ea3a-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+Compiler executable checksum: 85e1dc113eca18ee24842097eb6e9185
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_9d255.dir/CMakeCCompilerABI.c.obj' '-c' '-mlittle-endian' '-mabi=lp64'
+ /tmp_amd/adams/export/adams/1/cs9242/crossdev/gcc-9-aarch64-none-linux-gnu/bin/../lib/gcc/aarch64-none-linux-gnu/9.2.1/../../../../aarch64-none-linux-gnu/bin/as -v -EL -mabi=lp64 -o CMakeFiles/cmTC_9d255.dir/CMakeCCompilerABI.c.obj /tmp/ccijsB5X.s
+GNU assembler version 2.33.1 (aarch64-none-linux-gnu) using BFD version (GNU Toolchain for the A-profile Architecture 9.2-2019.12 (arm-9.10)) 2.33.1.20191209
+COMPILER_PATH=/tmp_amd/adams/export/adams/1/cs9242/crossdev/gcc-9-aarch64-none-linux-gnu/bin/../libexec/gcc/aarch64-none-linux-gnu/9.2.1/:/tmp_amd/adams/export/adams/1/cs9242/crossdev/gcc-9-aarch64-none-linux-gnu/bin/../libexec/gcc/:/tmp_amd/adams/export/adams/1/cs9242/crossdev/gcc-9-aarch64-none-linux-gnu/bin/../lib/gcc/aarch64-none-linux-gnu/9.2.1/../../../../aarch64-none-linux-gnu/bin/
+LIBRARY_PATH=/tmp_amd/adams/export/adams/1/cs9242/crossdev/gcc-9-aarch64-none-linux-gnu/bin/../lib/gcc/aarch64-none-linux-gnu/9.2.1/:/tmp_amd/adams/export/adams/1/cs9242/crossdev/gcc-9-aarch64-none-linux-gnu/bin/../lib/gcc/:/tmp_amd/adams/export/adams/1/cs9242/crossdev/gcc-9-aarch64-none-linux-gnu/bin/../lib/gcc/aarch64-none-linux-gnu/9.2.1/../../../../aarch64-none-linux-gnu/lib/../lib64/:/tmp_amd/adams/export/adams/1/cs9242/crossdev/gcc-9-aarch64-none-linux-gnu/bin/../lib/gcc/aarch64-none-linux-gnu/9.2.1/../../../../aarch64-none-linux-gnu/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_9d255.dir/CMakeCCompilerABI.c.obj' '-c' '-mlittle-endian' '-mabi=lp64'
+[2/2] Linking C static library libcmTC_9d255.a
+
+
+
+Parsed C implicit include dir info from above output: rv=done
+  found start of include info
+  found start of implicit include info
+    add: [/tmp_amd/adams/export/adams/1/cs9242/crossdev/gcc-9-aarch64-none-linux-gnu/bin/../lib/gcc/aarch64-none-linux-gnu/9.2.1/include]
+    add: [/tmp_amd/adams/export/adams/1/cs9242/crossdev/gcc-9-aarch64-none-linux-gnu/bin/../lib/gcc/aarch64-none-linux-gnu/9.2.1/include-fixed]
+    add: [/tmp_amd/adams/export/adams/1/cs9242/crossdev/gcc-9-aarch64-none-linux-gnu/bin/../lib/gcc/aarch64-none-linux-gnu/9.2.1/../../../../aarch64-none-linux-gnu/include]
+  end of search list found
+  collapse include dir [/tmp_amd/adams/export/adams/1/cs9242/crossdev/gcc-9-aarch64-none-linux-gnu/bin/../lib/gcc/aarch64-none-linux-gnu/9.2.1/include] ==> [/tmp_amd/adams/export/adams/1/cs9242/crossdev/gcc-9-aarch64-none-linux-gnu/lib/gcc/aarch64-none-linux-gnu/9.2.1/include]
+  collapse include dir [/tmp_amd/adams/export/adams/1/cs9242/crossdev/gcc-9-aarch64-none-linux-gnu/bin/../lib/gcc/aarch64-none-linux-gnu/9.2.1/include-fixed] ==> [/tmp_amd/adams/export/adams/1/cs9242/crossdev/gcc-9-aarch64-none-linux-gnu/lib/gcc/aarch64-none-linux-gnu/9.2.1/include-fixed]
+  collapse include dir [/tmp_amd/adams/export/adams/1/cs9242/crossdev/gcc-9-aarch64-none-linux-gnu/bin/../lib/gcc/aarch64-none-linux-gnu/9.2.1/../../../../aarch64-none-linux-gnu/include] ==> [/tmp_amd/adams/export/adams/1/cs9242/crossdev/gcc-9-aarch64-none-linux-gnu/aarch64-none-linux-gnu/include]
+  implicit include dirs: [/tmp_amd/adams/export/adams/1/cs9242/crossdev/gcc-9-aarch64-none-linux-gnu/lib/gcc/aarch64-none-linux-gnu/9.2.1/include;/tmp_amd/adams/export/adams/1/cs9242/crossdev/gcc-9-aarch64-none-linux-gnu/lib/gcc/aarch64-none-linux-gnu/9.2.1/include-fixed;/tmp_amd/adams/export/adams/1/cs9242/crossdev/gcc-9-aarch64-none-linux-gnu/aarch64-none-linux-gnu/include]
+
+
+Parsed C implicit link information from above output:
+  link line regex: [^( *|.*[/\])(aarch64-linux-gnu-ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /tmp_amd/kamen/export/kamen/1/z5284381/comp9242/group-08/build_32/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command(s):/home/cs9242/bin/ninja cmTC_9d255 && [1/2] Building C object CMakeFiles/cmTC_9d255.dir/CMakeCCompilerABI.c.obj]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/home/cs9242/crossdev/gcc-9-aarch64-none-linux-gnu/bin/aarch64-linux-gnu-gcc]
+  ignore line: [Target: aarch64-none-linux-gnu]
+  ignore line: [Configured with: /tmp/dgboter/bbs/rhev-vm2--rhe6x86_64/buildbot/rhe6x86_64--aarch64-none-linux-gnu/build/src/gcc/configure --target=aarch64-none-linux-gnu --prefix= --with-sysroot=/aarch64-none-linux-gnu/libc --with-build-sysroot=/tmp/dgboter/bbs/rhev-vm2--rhe6x86_64/buildbot/rhe6x86_64--aarch64-none-linux-gnu/build/build-aarch64-none-linux-gnu/install//aarch64-none-linux-gnu/libc --with-bugurl=https://bugs.linaro.org/ --enable-gnu-indirect-function --enable-shared --disable-libssp --disable-libmudflap --enable-checking=release --enable-languages=c c++ fortran --with-gmp=/tmp/dgboter/bbs/rhev-vm2--rhe6x86_64/buildbot/rhe6x86_64--aarch64-none-linux-gnu/build/build-aarch64-none-linux-gnu/host-tools --with-mpfr=/tmp/dgboter/bbs/rhev-vm2--rhe6x86_64/buildbot/rhe6x86_64--aarch64-none-linux-gnu/build/build-aarch64-none-linux-gnu/host-tools --with-mpc=/tmp/dgboter/bbs/rhev-vm2--rhe6x86_64/buildbot/rhe6x86_64--aarch64-none-linux-gnu/build/build-aarch64-none-linux-gnu/host-tools --with-isl=/tmp/dgboter/bbs/rhev-vm2--rhe6x86_64/buildbot/rhe6x86_64--aarch64-none-linux-gnu/build/build-aarch64-none-linux-gnu/host-tools --enable-fix-cortex-a53-843419 --with-pkgversion='GNU Toolchain for the A-profile Architecture 9.2-2019.12 (arm-9.10)']
+  ignore line: [Thread model: posix]
+  ignore line: [gcc version 9.2.1 20191025 (GNU Toolchain for the A-profile Architecture 9.2-2019.12 (arm-9.10)) ]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_9d255.dir/CMakeCCompilerABI.c.obj' '-c' '-mlittle-endian' '-mabi=lp64']
+  ignore line: [ /tmp_amd/adams/export/adams/1/cs9242/crossdev/gcc-9-aarch64-none-linux-gnu/bin/../libexec/gcc/aarch64-none-linux-gnu/9.2.1/cc1 -quiet -v -iprefix /tmp_amd/adams/export/adams/1/cs9242/crossdev/gcc-9-aarch64-none-linux-gnu/bin/../lib/gcc/aarch64-none-linux-gnu/9.2.1/ -isysroot /tmp_amd/kamen/export/kamen/1/z5284381/comp9242/group-08/build_32/CMakeFiles/CMakeTmp /tmp_amd/adams/export/adams/1/cs9242/cmake/share/cmake-3.17/Modules/CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mlittle-endian -mabi=lp64 -auxbase-strip CMakeFiles/cmTC_9d255.dir/CMakeCCompilerABI.c.obj -version -o /tmp/ccijsB5X.s]
+  ignore line: [GNU C17 (GNU Toolchain for the A-profile Architecture 9.2-2019.12 (arm-9.10)) version 9.2.1 20191025 (aarch64-none-linux-gnu)]
+  ignore line: [	compiled by GNU C version 4.8.1  GMP version 4.3.2  MPFR version 3.1.6  MPC version 1.0.3  isl version isl-0.15-1-g835ea3a-GMP]
+  ignore line: []
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [ignoring duplicate directory "/tmp_amd/adams/export/adams/1/cs9242/crossdev/gcc-9-aarch64-none-linux-gnu/bin/../lib/gcc/../../lib/gcc/aarch64-none-linux-gnu/9.2.1/include"]
+  ignore line: [ignoring nonexistent directory "/tmp_amd/kamen/export/kamen/1/z5284381/comp9242/group-08/build_32/CMakeFiles/CMakeTmp/usr/local/include"]
+  ignore line: [ignoring duplicate directory "/tmp_amd/adams/export/adams/1/cs9242/crossdev/gcc-9-aarch64-none-linux-gnu/bin/../lib/gcc/../../lib/gcc/aarch64-none-linux-gnu/9.2.1/include-fixed"]
+  ignore line: [ignoring duplicate directory "/tmp_amd/adams/export/adams/1/cs9242/crossdev/gcc-9-aarch64-none-linux-gnu/bin/../lib/gcc/../../lib/gcc/aarch64-none-linux-gnu/9.2.1/../../../../aarch64-none-linux-gnu/include"]
+  ignore line: [ignoring nonexistent directory "/tmp_amd/kamen/export/kamen/1/z5284381/comp9242/group-08/build_32/CMakeFiles/CMakeTmp/usr/include"]
+  ignore line: [#include "..." search starts here:]
+  ignore line: [#include <...> search starts here:]
+  ignore line: [ /tmp_amd/adams/export/adams/1/cs9242/crossdev/gcc-9-aarch64-none-linux-gnu/bin/../lib/gcc/aarch64-none-linux-gnu/9.2.1/include]
+  ignore line: [ /tmp_amd/adams/export/adams/1/cs9242/crossdev/gcc-9-aarch64-none-linux-gnu/bin/../lib/gcc/aarch64-none-linux-gnu/9.2.1/include-fixed]
+  ignore line: [ /tmp_amd/adams/export/adams/1/cs9242/crossdev/gcc-9-aarch64-none-linux-gnu/bin/../lib/gcc/aarch64-none-linux-gnu/9.2.1/../../../../aarch64-none-linux-gnu/include]
+  ignore line: [End of search list.]
+  ignore line: [GNU C17 (GNU Toolchain for the A-profile Architecture 9.2-2019.12 (arm-9.10)) version 9.2.1 20191025 (aarch64-none-linux-gnu)]
+  ignore line: [	compiled by GNU C version 4.8.1  GMP version 4.3.2  MPFR version 3.1.6  MPC version 1.0.3  isl version isl-0.15-1-g835ea3a-GMP]
+  ignore line: []
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [Compiler executable checksum: 85e1dc113eca18ee24842097eb6e9185]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_9d255.dir/CMakeCCompilerABI.c.obj' '-c' '-mlittle-endian' '-mabi=lp64']
+  ignore line: [ /tmp_amd/adams/export/adams/1/cs9242/crossdev/gcc-9-aarch64-none-linux-gnu/bin/../lib/gcc/aarch64-none-linux-gnu/9.2.1/../../../../aarch64-none-linux-gnu/bin/as -v -EL -mabi=lp64 -o CMakeFiles/cmTC_9d255.dir/CMakeCCompilerABI.c.obj /tmp/ccijsB5X.s]
+  ignore line: [GNU assembler version 2.33.1 (aarch64-none-linux-gnu) using BFD version (GNU Toolchain for the A-profile Architecture 9.2-2019.12 (arm-9.10)) 2.33.1.20191209]
+  ignore line: [COMPILER_PATH=/tmp_amd/adams/export/adams/1/cs9242/crossdev/gcc-9-aarch64-none-linux-gnu/bin/../libexec/gcc/aarch64-none-linux-gnu/9.2.1/:/tmp_amd/adams/export/adams/1/cs9242/crossdev/gcc-9-aarch64-none-linux-gnu/bin/../libexec/gcc/:/tmp_amd/adams/export/adams/1/cs9242/crossdev/gcc-9-aarch64-none-linux-gnu/bin/../lib/gcc/aarch64-none-linux-gnu/9.2.1/../../../../aarch64-none-linux-gnu/bin/]
+  ignore line: [LIBRARY_PATH=/tmp_amd/adams/export/adams/1/cs9242/crossdev/gcc-9-aarch64-none-linux-gnu/bin/../lib/gcc/aarch64-none-linux-gnu/9.2.1/:/tmp_amd/adams/export/adams/1/cs9242/crossdev/gcc-9-aarch64-none-linux-gnu/bin/../lib/gcc/:/tmp_amd/adams/export/adams/1/cs9242/crossdev/gcc-9-aarch64-none-linux-gnu/bin/../lib/gcc/aarch64-none-linux-gnu/9.2.1/../../../../aarch64-none-linux-gnu/lib/../lib64/:/tmp_amd/adams/export/adams/1/cs9242/crossdev/gcc-9-aarch64-none-linux-gnu/bin/../lib/gcc/aarch64-none-linux-gnu/9.2.1/../../../../aarch64-none-linux-gnu/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_9d255.dir/CMakeCCompilerABI.c.obj' '-c' '-mlittle-endian' '-mabi=lp64']
+  ignore line: [[2/2] Linking C static library libcmTC_9d255.a]
+  ignore line: []
+  ignore line: []
+  implicit libs: []
+  implicit dirs: []
+  implicit fwks: []
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+Compiler: /home/cs9242/crossdev/gcc-9-aarch64-none-linux-gnu/bin/aarch64-linux-gnu-g++ 
+Build flags: 
+Id flags:  
+
+The output was:
+0
+
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+
+The CXX compiler identification is GNU, found in "/tmp_amd/kamen/export/kamen/1/z5284381/comp9242/group-08/build_32/CMakeFiles/3.17.3/CompilerIdCXX/a.out"
+
+Determining if the CXX compiler works passed with the following output:
+Change Dir: /tmp_amd/kamen/export/kamen/1/z5284381/comp9242/group-08/build_32/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/home/cs9242/bin/ninja cmTC_97908 && [1/2] Building CXX object CMakeFiles/cmTC_97908.dir/testCXXCompiler.cxx.obj
+[2/2] Linking CXX static library libcmTC_97908.a
+
+
+
+Detecting CXX compiler ABI info compiled with the following output:
+Change Dir: /tmp_amd/kamen/export/kamen/1/z5284381/comp9242/group-08/build_32/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/home/cs9242/bin/ninja cmTC_b0d41 && [1/2] Building CXX object CMakeFiles/cmTC_b0d41.dir/CMakeCXXCompilerABI.cpp.obj
+Using built-in specs.
+COLLECT_GCC=/home/cs9242/crossdev/gcc-9-aarch64-none-linux-gnu/bin/aarch64-linux-gnu-g++
+Target: aarch64-none-linux-gnu
+Configured with: /tmp/dgboter/bbs/rhev-vm2--rhe6x86_64/buildbot/rhe6x86_64--aarch64-none-linux-gnu/build/src/gcc/configure --target=aarch64-none-linux-gnu --prefix= --with-sysroot=/aarch64-none-linux-gnu/libc --with-build-sysroot=/tmp/dgboter/bbs/rhev-vm2--rhe6x86_64/buildbot/rhe6x86_64--aarch64-none-linux-gnu/build/build-aarch64-none-linux-gnu/install//aarch64-none-linux-gnu/libc --with-bugurl=https://bugs.linaro.org/ --enable-gnu-indirect-function --enable-shared --disable-libssp --disable-libmudflap --enable-checking=release --enable-languages=c,c++,fortran --with-gmp=/tmp/dgboter/bbs/rhev-vm2--rhe6x86_64/buildbot/rhe6x86_64--aarch64-none-linux-gnu/build/build-aarch64-none-linux-gnu/host-tools --with-mpfr=/tmp/dgboter/bbs/rhev-vm2--rhe6x86_64/buildbot/rhe6x86_64--aarch64-none-linux-gnu/build/build-aarch64-none-linux-gnu/host-tools --with-mpc=/tmp/dgboter/bbs/rhev-vm2--rhe6x86_64/buildbot/rhe6x86_64--aarch64-none-linux-gnu/build/build-aarch64-none-linux-gnu/host-tools --with-isl=/tmp/dgboter/bbs/rhev-vm2--rhe6x86_64/buildbot/rhe6x86_64--aarch64-none-linux-gnu/build/build-aarch64-none-linux-gnu/host-tools --enable-fix-cortex-a53-843419 --with-pkgversion='GNU Toolchain for the A-profile Architecture 9.2-2019.12 (arm-9.10)'
+Thread model: posix
+gcc version 9.2.1 20191025 (GNU Toolchain for the A-profile Architecture 9.2-2019.12 (arm-9.10)) 
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_b0d41.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64'
+ /tmp_amd/adams/export/adams/1/cs9242/crossdev/gcc-9-aarch64-none-linux-gnu/bin/../libexec/gcc/aarch64-none-linux-gnu/9.2.1/cc1plus -quiet -v -iprefix /tmp_amd/adams/export/adams/1/cs9242/crossdev/gcc-9-aarch64-none-linux-gnu/bin/../lib/gcc/aarch64-none-linux-gnu/9.2.1/ -isysroot /tmp_amd/kamen/export/kamen/1/z5284381/comp9242/group-08/build_32/CMakeFiles/CMakeTmp -D_GNU_SOURCE /tmp_amd/adams/export/adams/1/cs9242/cmake/share/cmake-3.17/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -mlittle-endian -mabi=lp64 -auxbase-strip CMakeFiles/cmTC_b0d41.dir/CMakeCXXCompilerABI.cpp.obj -version -o /tmp/cc7dDozj.s
+GNU C++14 (GNU Toolchain for the A-profile Architecture 9.2-2019.12 (arm-9.10)) version 9.2.1 20191025 (aarch64-none-linux-gnu)
+	compiled by GNU C version 4.8.1, GMP version 4.3.2, MPFR version 3.1.6, MPC version 1.0.3, isl version isl-0.15-1-g835ea3a-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+ignoring duplicate directory "/tmp_amd/adams/export/adams/1/cs9242/crossdev/gcc-9-aarch64-none-linux-gnu/bin/../lib/gcc/../../lib/gcc/aarch64-none-linux-gnu/9.2.1/../../../../aarch64-none-linux-gnu/include/c++/9.2.1"
+ignoring duplicate directory "/tmp_amd/adams/export/adams/1/cs9242/crossdev/gcc-9-aarch64-none-linux-gnu/bin/../lib/gcc/../../lib/gcc/aarch64-none-linux-gnu/9.2.1/../../../../aarch64-none-linux-gnu/include/c++/9.2.1/aarch64-none-linux-gnu"
+ignoring duplicate directory "/tmp_amd/adams/export/adams/1/cs9242/crossdev/gcc-9-aarch64-none-linux-gnu/bin/../lib/gcc/../../lib/gcc/aarch64-none-linux-gnu/9.2.1/../../../../aarch64-none-linux-gnu/include/c++/9.2.1/backward"
+ignoring duplicate directory "/tmp_amd/adams/export/adams/1/cs9242/crossdev/gcc-9-aarch64-none-linux-gnu/bin/../lib/gcc/../../lib/gcc/aarch64-none-linux-gnu/9.2.1/include"
+ignoring nonexistent directory "/tmp_amd/kamen/export/kamen/1/z5284381/comp9242/group-08/build_32/CMakeFiles/CMakeTmp/usr/local/include"
+ignoring duplicate directory "/tmp_amd/adams/export/adams/1/cs9242/crossdev/gcc-9-aarch64-none-linux-gnu/bin/../lib/gcc/../../lib/gcc/aarch64-none-linux-gnu/9.2.1/include-fixed"
+ignoring duplicate directory "/tmp_amd/adams/export/adams/1/cs9242/crossdev/gcc-9-aarch64-none-linux-gnu/bin/../lib/gcc/../../lib/gcc/aarch64-none-linux-gnu/9.2.1/../../../../aarch64-none-linux-gnu/include"
+ignoring nonexistent directory "/tmp_amd/kamen/export/kamen/1/z5284381/comp9242/group-08/build_32/CMakeFiles/CMakeTmp/usr/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /tmp_amd/adams/export/adams/1/cs9242/crossdev/gcc-9-aarch64-none-linux-gnu/bin/../lib/gcc/aarch64-none-linux-gnu/9.2.1/../../../../aarch64-none-linux-gnu/include/c++/9.2.1
+ /tmp_amd/adams/export/adams/1/cs9242/crossdev/gcc-9-aarch64-none-linux-gnu/bin/../lib/gcc/aarch64-none-linux-gnu/9.2.1/../../../../aarch64-none-linux-gnu/include/c++/9.2.1/aarch64-none-linux-gnu
+ /tmp_amd/adams/export/adams/1/cs9242/crossdev/gcc-9-aarch64-none-linux-gnu/bin/../lib/gcc/aarch64-none-linux-gnu/9.2.1/../../../../aarch64-none-linux-gnu/include/c++/9.2.1/backward
+ /tmp_amd/adams/export/adams/1/cs9242/crossdev/gcc-9-aarch64-none-linux-gnu/bin/../lib/gcc/aarch64-none-linux-gnu/9.2.1/include
+ /tmp_amd/adams/export/adams/1/cs9242/crossdev/gcc-9-aarch64-none-linux-gnu/bin/../lib/gcc/aarch64-none-linux-gnu/9.2.1/include-fixed
+ /tmp_amd/adams/export/adams/1/cs9242/crossdev/gcc-9-aarch64-none-linux-gnu/bin/../lib/gcc/aarch64-none-linux-gnu/9.2.1/../../../../aarch64-none-linux-gnu/include
+End of search list.
+GNU C++14 (GNU Toolchain for the A-profile Architecture 9.2-2019.12 (arm-9.10)) version 9.2.1 20191025 (aarch64-none-linux-gnu)
+	compiled by GNU C version 4.8.1, GMP version 4.3.2, MPFR version 3.1.6, MPC version 1.0.3, isl version isl-0.15-1-g835ea3a-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+Compiler executable checksum: 2c1b06ae38fc097703f75fa12d3b7029
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_b0d41.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64'
+ /tmp_amd/adams/export/adams/1/cs9242/crossdev/gcc-9-aarch64-none-linux-gnu/bin/../lib/gcc/aarch64-none-linux-gnu/9.2.1/../../../../aarch64-none-linux-gnu/bin/as -v -EL -mabi=lp64 -o CMakeFiles/cmTC_b0d41.dir/CMakeCXXCompilerABI.cpp.obj /tmp/cc7dDozj.s
+GNU assembler version 2.33.1 (aarch64-none-linux-gnu) using BFD version (GNU Toolchain for the A-profile Architecture 9.2-2019.12 (arm-9.10)) 2.33.1.20191209
+COMPILER_PATH=/tmp_amd/adams/export/adams/1/cs9242/crossdev/gcc-9-aarch64-none-linux-gnu/bin/../libexec/gcc/aarch64-none-linux-gnu/9.2.1/:/tmp_amd/adams/export/adams/1/cs9242/crossdev/gcc-9-aarch64-none-linux-gnu/bin/../libexec/gcc/:/tmp_amd/adams/export/adams/1/cs9242/crossdev/gcc-9-aarch64-none-linux-gnu/bin/../lib/gcc/aarch64-none-linux-gnu/9.2.1/../../../../aarch64-none-linux-gnu/bin/
+LIBRARY_PATH=/tmp_amd/adams/export/adams/1/cs9242/crossdev/gcc-9-aarch64-none-linux-gnu/bin/../lib/gcc/aarch64-none-linux-gnu/9.2.1/:/tmp_amd/adams/export/adams/1/cs9242/crossdev/gcc-9-aarch64-none-linux-gnu/bin/../lib/gcc/:/tmp_amd/adams/export/adams/1/cs9242/crossdev/gcc-9-aarch64-none-linux-gnu/bin/../lib/gcc/aarch64-none-linux-gnu/9.2.1/../../../../aarch64-none-linux-gnu/lib/../lib64/:/tmp_amd/adams/export/adams/1/cs9242/crossdev/gcc-9-aarch64-none-linux-gnu/bin/../lib/gcc/aarch64-none-linux-gnu/9.2.1/../../../../aarch64-none-linux-gnu/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_b0d41.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64'
+[2/2] Linking CXX static library libcmTC_b0d41.a
+
+
+
+Parsed CXX implicit include dir info from above output: rv=done
+  found start of include info
+  found start of implicit include info
+    add: [/tmp_amd/adams/export/adams/1/cs9242/crossdev/gcc-9-aarch64-none-linux-gnu/bin/../lib/gcc/aarch64-none-linux-gnu/9.2.1/../../../../aarch64-none-linux-gnu/include/c++/9.2.1]
+    add: [/tmp_amd/adams/export/adams/1/cs9242/crossdev/gcc-9-aarch64-none-linux-gnu/bin/../lib/gcc/aarch64-none-linux-gnu/9.2.1/../../../../aarch64-none-linux-gnu/include/c++/9.2.1/aarch64-none-linux-gnu]
+    add: [/tmp_amd/adams/export/adams/1/cs9242/crossdev/gcc-9-aarch64-none-linux-gnu/bin/../lib/gcc/aarch64-none-linux-gnu/9.2.1/../../../../aarch64-none-linux-gnu/include/c++/9.2.1/backward]
+    add: [/tmp_amd/adams/export/adams/1/cs9242/crossdev/gcc-9-aarch64-none-linux-gnu/bin/../lib/gcc/aarch64-none-linux-gnu/9.2.1/include]
+    add: [/tmp_amd/adams/export/adams/1/cs9242/crossdev/gcc-9-aarch64-none-linux-gnu/bin/../lib/gcc/aarch64-none-linux-gnu/9.2.1/include-fixed]
+    add: [/tmp_amd/adams/export/adams/1/cs9242/crossdev/gcc-9-aarch64-none-linux-gnu/bin/../lib/gcc/aarch64-none-linux-gnu/9.2.1/../../../../aarch64-none-linux-gnu/include]
+  end of search list found
+  collapse include dir [/tmp_amd/adams/export/adams/1/cs9242/crossdev/gcc-9-aarch64-none-linux-gnu/bin/../lib/gcc/aarch64-none-linux-gnu/9.2.1/../../../../aarch64-none-linux-gnu/include/c++/9.2.1] ==> [/tmp_amd/adams/export/adams/1/cs9242/crossdev/gcc-9-aarch64-none-linux-gnu/aarch64-none-linux-gnu/include/c++/9.2.1]
+  collapse include dir [/tmp_amd/adams/export/adams/1/cs9242/crossdev/gcc-9-aarch64-none-linux-gnu/bin/../lib/gcc/aarch64-none-linux-gnu/9.2.1/../../../../aarch64-none-linux-gnu/include/c++/9.2.1/aarch64-none-linux-gnu] ==> [/tmp_amd/adams/export/adams/1/cs9242/crossdev/gcc-9-aarch64-none-linux-gnu/aarch64-none-linux-gnu/include/c++/9.2.1/aarch64-none-linux-gnu]
+  collapse include dir [/tmp_amd/adams/export/adams/1/cs9242/crossdev/gcc-9-aarch64-none-linux-gnu/bin/../lib/gcc/aarch64-none-linux-gnu/9.2.1/../../../../aarch64-none-linux-gnu/include/c++/9.2.1/backward] ==> [/tmp_amd/adams/export/adams/1/cs9242/crossdev/gcc-9-aarch64-none-linux-gnu/aarch64-none-linux-gnu/include/c++/9.2.1/backward]
+  collapse include dir [/tmp_amd/adams/export/adams/1/cs9242/crossdev/gcc-9-aarch64-none-linux-gnu/bin/../lib/gcc/aarch64-none-linux-gnu/9.2.1/include] ==> [/tmp_amd/adams/export/adams/1/cs9242/crossdev/gcc-9-aarch64-none-linux-gnu/lib/gcc/aarch64-none-linux-gnu/9.2.1/include]
+  collapse include dir [/tmp_amd/adams/export/adams/1/cs9242/crossdev/gcc-9-aarch64-none-linux-gnu/bin/../lib/gcc/aarch64-none-linux-gnu/9.2.1/include-fixed] ==> [/tmp_amd/adams/export/adams/1/cs9242/crossdev/gcc-9-aarch64-none-linux-gnu/lib/gcc/aarch64-none-linux-gnu/9.2.1/include-fixed]
+  collapse include dir [/tmp_amd/adams/export/adams/1/cs9242/crossdev/gcc-9-aarch64-none-linux-gnu/bin/../lib/gcc/aarch64-none-linux-gnu/9.2.1/../../../../aarch64-none-linux-gnu/include] ==> [/tmp_amd/adams/export/adams/1/cs9242/crossdev/gcc-9-aarch64-none-linux-gnu/aarch64-none-linux-gnu/include]
+  implicit include dirs: [/tmp_amd/adams/export/adams/1/cs9242/crossdev/gcc-9-aarch64-none-linux-gnu/aarch64-none-linux-gnu/include/c++/9.2.1;/tmp_amd/adams/export/adams/1/cs9242/crossdev/gcc-9-aarch64-none-linux-gnu/aarch64-none-linux-gnu/include/c++/9.2.1/aarch64-none-linux-gnu;/tmp_amd/adams/export/adams/1/cs9242/crossdev/gcc-9-aarch64-none-linux-gnu/aarch64-none-linux-gnu/include/c++/9.2.1/backward;/tmp_amd/adams/export/adams/1/cs9242/crossdev/gcc-9-aarch64-none-linux-gnu/lib/gcc/aarch64-none-linux-gnu/9.2.1/include;/tmp_amd/adams/export/adams/1/cs9242/crossdev/gcc-9-aarch64-none-linux-gnu/lib/gcc/aarch64-none-linux-gnu/9.2.1/include-fixed;/tmp_amd/adams/export/adams/1/cs9242/crossdev/gcc-9-aarch64-none-linux-gnu/aarch64-none-linux-gnu/include]
+
+
+Parsed CXX implicit link information from above output:
+  link line regex: [^( *|.*[/\])(aarch64-linux-gnu-ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /tmp_amd/kamen/export/kamen/1/z5284381/comp9242/group-08/build_32/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command(s):/home/cs9242/bin/ninja cmTC_b0d41 && [1/2] Building CXX object CMakeFiles/cmTC_b0d41.dir/CMakeCXXCompilerABI.cpp.obj]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/home/cs9242/crossdev/gcc-9-aarch64-none-linux-gnu/bin/aarch64-linux-gnu-g++]
+  ignore line: [Target: aarch64-none-linux-gnu]
+  ignore line: [Configured with: /tmp/dgboter/bbs/rhev-vm2--rhe6x86_64/buildbot/rhe6x86_64--aarch64-none-linux-gnu/build/src/gcc/configure --target=aarch64-none-linux-gnu --prefix= --with-sysroot=/aarch64-none-linux-gnu/libc --with-build-sysroot=/tmp/dgboter/bbs/rhev-vm2--rhe6x86_64/buildbot/rhe6x86_64--aarch64-none-linux-gnu/build/build-aarch64-none-linux-gnu/install//aarch64-none-linux-gnu/libc --with-bugurl=https://bugs.linaro.org/ --enable-gnu-indirect-function --enable-shared --disable-libssp --disable-libmudflap --enable-checking=release --enable-languages=c c++ fortran --with-gmp=/tmp/dgboter/bbs/rhev-vm2--rhe6x86_64/buildbot/rhe6x86_64--aarch64-none-linux-gnu/build/build-aarch64-none-linux-gnu/host-tools --with-mpfr=/tmp/dgboter/bbs/rhev-vm2--rhe6x86_64/buildbot/rhe6x86_64--aarch64-none-linux-gnu/build/build-aarch64-none-linux-gnu/host-tools --with-mpc=/tmp/dgboter/bbs/rhev-vm2--rhe6x86_64/buildbot/rhe6x86_64--aarch64-none-linux-gnu/build/build-aarch64-none-linux-gnu/host-tools --with-isl=/tmp/dgboter/bbs/rhev-vm2--rhe6x86_64/buildbot/rhe6x86_64--aarch64-none-linux-gnu/build/build-aarch64-none-linux-gnu/host-tools --enable-fix-cortex-a53-843419 --with-pkgversion='GNU Toolchain for the A-profile Architecture 9.2-2019.12 (arm-9.10)']
+  ignore line: [Thread model: posix]
+  ignore line: [gcc version 9.2.1 20191025 (GNU Toolchain for the A-profile Architecture 9.2-2019.12 (arm-9.10)) ]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_b0d41.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64']
+  ignore line: [ /tmp_amd/adams/export/adams/1/cs9242/crossdev/gcc-9-aarch64-none-linux-gnu/bin/../libexec/gcc/aarch64-none-linux-gnu/9.2.1/cc1plus -quiet -v -iprefix /tmp_amd/adams/export/adams/1/cs9242/crossdev/gcc-9-aarch64-none-linux-gnu/bin/../lib/gcc/aarch64-none-linux-gnu/9.2.1/ -isysroot /tmp_amd/kamen/export/kamen/1/z5284381/comp9242/group-08/build_32/CMakeFiles/CMakeTmp -D_GNU_SOURCE /tmp_amd/adams/export/adams/1/cs9242/cmake/share/cmake-3.17/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -mlittle-endian -mabi=lp64 -auxbase-strip CMakeFiles/cmTC_b0d41.dir/CMakeCXXCompilerABI.cpp.obj -version -o /tmp/cc7dDozj.s]
+  ignore line: [GNU C++14 (GNU Toolchain for the A-profile Architecture 9.2-2019.12 (arm-9.10)) version 9.2.1 20191025 (aarch64-none-linux-gnu)]
+  ignore line: [	compiled by GNU C version 4.8.1  GMP version 4.3.2  MPFR version 3.1.6  MPC version 1.0.3  isl version isl-0.15-1-g835ea3a-GMP]
+  ignore line: []
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [ignoring duplicate directory "/tmp_amd/adams/export/adams/1/cs9242/crossdev/gcc-9-aarch64-none-linux-gnu/bin/../lib/gcc/../../lib/gcc/aarch64-none-linux-gnu/9.2.1/../../../../aarch64-none-linux-gnu/include/c++/9.2.1"]
+  ignore line: [ignoring duplicate directory "/tmp_amd/adams/export/adams/1/cs9242/crossdev/gcc-9-aarch64-none-linux-gnu/bin/../lib/gcc/../../lib/gcc/aarch64-none-linux-gnu/9.2.1/../../../../aarch64-none-linux-gnu/include/c++/9.2.1/aarch64-none-linux-gnu"]
+  ignore line: [ignoring duplicate directory "/tmp_amd/adams/export/adams/1/cs9242/crossdev/gcc-9-aarch64-none-linux-gnu/bin/../lib/gcc/../../lib/gcc/aarch64-none-linux-gnu/9.2.1/../../../../aarch64-none-linux-gnu/include/c++/9.2.1/backward"]
+  ignore line: [ignoring duplicate directory "/tmp_amd/adams/export/adams/1/cs9242/crossdev/gcc-9-aarch64-none-linux-gnu/bin/../lib/gcc/../../lib/gcc/aarch64-none-linux-gnu/9.2.1/include"]
+  ignore line: [ignoring nonexistent directory "/tmp_amd/kamen/export/kamen/1/z5284381/comp9242/group-08/build_32/CMakeFiles/CMakeTmp/usr/local/include"]
+  ignore line: [ignoring duplicate directory "/tmp_amd/adams/export/adams/1/cs9242/crossdev/gcc-9-aarch64-none-linux-gnu/bin/../lib/gcc/../../lib/gcc/aarch64-none-linux-gnu/9.2.1/include-fixed"]
+  ignore line: [ignoring duplicate directory "/tmp_amd/adams/export/adams/1/cs9242/crossdev/gcc-9-aarch64-none-linux-gnu/bin/../lib/gcc/../../lib/gcc/aarch64-none-linux-gnu/9.2.1/../../../../aarch64-none-linux-gnu/include"]
+  ignore line: [ignoring nonexistent directory "/tmp_amd/kamen/export/kamen/1/z5284381/comp9242/group-08/build_32/CMakeFiles/CMakeTmp/usr/include"]
+  ignore line: [#include "..." search starts here:]
+  ignore line: [#include <...> search starts here:]
+  ignore line: [ /tmp_amd/adams/export/adams/1/cs9242/crossdev/gcc-9-aarch64-none-linux-gnu/bin/../lib/gcc/aarch64-none-linux-gnu/9.2.1/../../../../aarch64-none-linux-gnu/include/c++/9.2.1]
+  ignore line: [ /tmp_amd/adams/export/adams/1/cs9242/crossdev/gcc-9-aarch64-none-linux-gnu/bin/../lib/gcc/aarch64-none-linux-gnu/9.2.1/../../../../aarch64-none-linux-gnu/include/c++/9.2.1/aarch64-none-linux-gnu]
+  ignore line: [ /tmp_amd/adams/export/adams/1/cs9242/crossdev/gcc-9-aarch64-none-linux-gnu/bin/../lib/gcc/aarch64-none-linux-gnu/9.2.1/../../../../aarch64-none-linux-gnu/include/c++/9.2.1/backward]
+  ignore line: [ /tmp_amd/adams/export/adams/1/cs9242/crossdev/gcc-9-aarch64-none-linux-gnu/bin/../lib/gcc/aarch64-none-linux-gnu/9.2.1/include]
+  ignore line: [ /tmp_amd/adams/export/adams/1/cs9242/crossdev/gcc-9-aarch64-none-linux-gnu/bin/../lib/gcc/aarch64-none-linux-gnu/9.2.1/include-fixed]
+  ignore line: [ /tmp_amd/adams/export/adams/1/cs9242/crossdev/gcc-9-aarch64-none-linux-gnu/bin/../lib/gcc/aarch64-none-linux-gnu/9.2.1/../../../../aarch64-none-linux-gnu/include]
+  ignore line: [End of search list.]
+  ignore line: [GNU C++14 (GNU Toolchain for the A-profile Architecture 9.2-2019.12 (arm-9.10)) version 9.2.1 20191025 (aarch64-none-linux-gnu)]
+  ignore line: [	compiled by GNU C version 4.8.1  GMP version 4.3.2  MPFR version 3.1.6  MPC version 1.0.3  isl version isl-0.15-1-g835ea3a-GMP]
+  ignore line: []
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [Compiler executable checksum: 2c1b06ae38fc097703f75fa12d3b7029]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_b0d41.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64']
+  ignore line: [ /tmp_amd/adams/export/adams/1/cs9242/crossdev/gcc-9-aarch64-none-linux-gnu/bin/../lib/gcc/aarch64-none-linux-gnu/9.2.1/../../../../aarch64-none-linux-gnu/bin/as -v -EL -mabi=lp64 -o CMakeFiles/cmTC_b0d41.dir/CMakeCXXCompilerABI.cpp.obj /tmp/cc7dDozj.s]
+  ignore line: [GNU assembler version 2.33.1 (aarch64-none-linux-gnu) using BFD version (GNU Toolchain for the A-profile Architecture 9.2-2019.12 (arm-9.10)) 2.33.1.20191209]
+  ignore line: [COMPILER_PATH=/tmp_amd/adams/export/adams/1/cs9242/crossdev/gcc-9-aarch64-none-linux-gnu/bin/../libexec/gcc/aarch64-none-linux-gnu/9.2.1/:/tmp_amd/adams/export/adams/1/cs9242/crossdev/gcc-9-aarch64-none-linux-gnu/bin/../libexec/gcc/:/tmp_amd/adams/export/adams/1/cs9242/crossdev/gcc-9-aarch64-none-linux-gnu/bin/../lib/gcc/aarch64-none-linux-gnu/9.2.1/../../../../aarch64-none-linux-gnu/bin/]
+  ignore line: [LIBRARY_PATH=/tmp_amd/adams/export/adams/1/cs9242/crossdev/gcc-9-aarch64-none-linux-gnu/bin/../lib/gcc/aarch64-none-linux-gnu/9.2.1/:/tmp_amd/adams/export/adams/1/cs9242/crossdev/gcc-9-aarch64-none-linux-gnu/bin/../lib/gcc/:/tmp_amd/adams/export/adams/1/cs9242/crossdev/gcc-9-aarch64-none-linux-gnu/bin/../lib/gcc/aarch64-none-linux-gnu/9.2.1/../../../../aarch64-none-linux-gnu/lib/../lib64/:/tmp_amd/adams/export/adams/1/cs9242/crossdev/gcc-9-aarch64-none-linux-gnu/bin/../lib/gcc/aarch64-none-linux-gnu/9.2.1/../../../../aarch64-none-linux-gnu/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_b0d41.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64']
+  ignore line: [[2/2] Linking CXX static library libcmTC_b0d41.a]
+  ignore line: []
+  ignore line: []
+  implicit libs: []
+  implicit dirs: []
+  implicit fwks: []
+
+
+Checking whether the ASM compiler is GNU using "--version" matched "(GNU assembler)|(GCC)|(Free Software Foundation)":
+aarch64-linux-gnu-gcc (GNU Toolchain for the A-profile Architecture 9.2-2019.12 (arm-9.10)) 9.2.1 20191025
+Copyright (C) 2019 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+Performing C SOURCE FILE Test compiler_arch_test succeeded with the following output:
+Change Dir: /tmp_amd/kamen/export/kamen/1/z5284381/comp9242/group-08/build_32/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/home/cs9242/bin/ninja cmTC_4162c && [1/2] Building C object CMakeFiles/cmTC_4162c.dir/src.c.obj
+[2/2] Linking C static library libcmTC_4162c.a
+
+
+Source file was:
+
+#if defined(__aarch64__)
+    int main() {return 0;}
+#else
+#error Invalid arch
+#endif
+    
+Performing C SOURCE FILE Test C_ACCEPTS_WALL succeeded with the following output:
+Change Dir: /tmp_amd/kamen/export/kamen/1/z5284381/comp9242/group-08/build_32/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/home/cs9242/bin/ninja cmTC_bc871 && [1/2] Building C object CMakeFiles/cmTC_bc871.dir/src.c.obj
+[2/2] Linking C static library libcmTC_bc871.a
+
+
+Source file was:
+int main(void) { return 0; }

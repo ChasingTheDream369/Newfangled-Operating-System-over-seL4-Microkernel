@@ -1,0 +1,34 @@
+<mxfile host="65bd71144e">
+    <diagram id="8MKNc365rDDu422pQqBD" name="Page-1">
+        <mxGraphModel dx="700" dy="614" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="8hgJfA3-dF6PVFWjWidR-1" value="" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="120" y="280" width="320" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="8hgJfA3-dF6PVFWjWidR-2" value="" style="endArrow=classic;html=1;entryX=0.75;entryY=1;entryDx=0;entryDy=0;" parent="1" target="8hgJfA3-dF6PVFWjWidR-1" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="360" y="360" as="sourcePoint"/>
+                        <mxPoint x="402" y="323" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="8hgJfA3-dF6PVFWjWidR-3" value="" style="endArrow=classic;html=1;entryX=0.75;entryY=1;entryDx=0;entryDy=0;" parent="1" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="200" y="360" as="sourcePoint"/>
+                        <mxPoint x="200" y="320" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="8hgJfA3-dF6PVFWjWidR-4" value="user read head" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="150" y="370" width="90" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="8hgJfA3-dF6PVFWjWidR-5" value="&amp;nbsp;serial write head" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="300" y="370" width="110" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="8hgJfA3-dF6PVFWjWidR-6" value="bytes to be processed" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="200" y="280" width="160" height="40" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>

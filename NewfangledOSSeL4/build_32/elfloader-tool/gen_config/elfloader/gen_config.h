@@ -1,0 +1,8 @@
+
+#pragma once
+
+#define CONFIG_IMAGE_BINARY 1
+#define CONFIG_ELFLOADER_IMAGE binary
+#define CONFIG_HASH_NONE 1
+#define CONFIG_HASH_INSTRUCTIONS hash_none
+#define CONFIG_ELFLOADER_INCLUDE_DTB 1

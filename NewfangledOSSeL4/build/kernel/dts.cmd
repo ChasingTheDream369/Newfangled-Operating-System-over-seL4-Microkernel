@@ -1,0 +1,1 @@
+regen /tmp_amd/kamen/export/kamen/1/z5284381/comp9242/group-08/build/kernel/kernel.dtb /tmp_amd/kamen/export/kamen/1/z5284381/comp9242/group-08/kernel/tools/dts/odroidc2.dts;/tmp_amd/kamen/export/kamen/1/z5284381/comp9242/group-08/kernel/src/plat/odroidc2/overlay-odroidc2.dts

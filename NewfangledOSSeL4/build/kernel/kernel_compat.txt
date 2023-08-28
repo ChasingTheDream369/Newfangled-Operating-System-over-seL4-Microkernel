@@ -1,0 +1,1 @@
+amlogic,meson-gx-uart;amlogic,meson-gx-wdt;arm,armv8-timer;arm,gic-400;

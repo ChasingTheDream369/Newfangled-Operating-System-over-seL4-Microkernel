@@ -1,0 +1,175 @@
+Determining if the include file sys/filio.h exists failed with the following output:
+Change Dir: /tmp_amd/kamen/export/kamen/1/z5284381/comp9242/group-08/build_limited/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/home/cs9242/bin/ninja cmTC_f54c5 && [1/2] Building C object CMakeFiles/cmTC_f54c5.dir/CheckIncludeFile.c.obj
+FAILED: CMakeFiles/cmTC_f54c5.dir/CheckIncludeFile.c.obj 
+/home/cs9242/crossdev/gcc-9-aarch64-none-linux-gnu/bin/aarch64-linux-gnu-gcc --sysroot=/tmp_amd/kamen/export/kamen/1/z5284381/comp9242/group-08/build_limited/CMakeFiles/CMakeTmp   -march=armv8-a+crc   -D__KERNEL_64__ -o CMakeFiles/cmTC_f54c5.dir/CheckIncludeFile.c.obj   -c CheckIncludeFile.c
+CheckIncludeFile.c:1:10: fatal error: sys/filio.h: No such file or directory
+    1 | #include <sys/filio.h>
+      |          ^~~~~~~~~~~~~
+compilation terminated.
+ninja: build stopped: subcommand failed.
+
+
+
+Performing C SOURCE FILE Test HAVE_SOCKADDR_LEN failed with the following output:
+Change Dir: /tmp_amd/kamen/export/kamen/1/z5284381/comp9242/group-08/build_limited/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/home/cs9242/bin/ninja cmTC_c1923 && [1/2] Building C object CMakeFiles/cmTC_c1923.dir/src.c.obj
+FAILED: CMakeFiles/cmTC_c1923.dir/src.c.obj 
+/home/cs9242/crossdev/gcc-9-aarch64-none-linux-gnu/bin/aarch64-linux-gnu-gcc --sysroot=/tmp_amd/kamen/export/kamen/1/z5284381/comp9242/group-08/build_limited/CMakeFiles/CMakeTmp   -march=armv8-a+crc   -D__KERNEL_64__ -DHAVE_SOCKADDR_LEN   -std=gnu11 -o CMakeFiles/cmTC_c1923.dir/src.c.obj   -c src.c
+src.c:2:10: fatal error: sys/socket.h: No such file or directory
+    2 | #include <sys/socket.h>
+      |          ^~~~~~~~~~~~~~
+compilation terminated.
+ninja: build stopped: subcommand failed.
+
+
+Source file was:
+
+#include <sys/socket.h>
+
+int main()
+{
+  (void)sizeof(((struct sockaddr *)0)->sa_len);
+  return 0;
+}
+
+Performing C SOURCE FILE Test HAVE_SO_BINDTODEVICE failed with the following output:
+Change Dir: /tmp_amd/kamen/export/kamen/1/z5284381/comp9242/group-08/build_limited/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/home/cs9242/bin/ninja cmTC_d05c9 && [1/2] Building C object CMakeFiles/cmTC_d05c9.dir/src.c.obj
+FAILED: CMakeFiles/cmTC_d05c9.dir/src.c.obj 
+/home/cs9242/crossdev/gcc-9-aarch64-none-linux-gnu/bin/aarch64-linux-gnu-gcc --sysroot=/tmp_amd/kamen/export/kamen/1/z5284381/comp9242/group-08/build_limited/CMakeFiles/CMakeTmp   -march=armv8-a+crc   -D__KERNEL_64__ -DHAVE_SO_BINDTODEVICE   -std=gnu11 -o CMakeFiles/cmTC_d05c9.dir/src.c.obj   -c src.c
+src.c:1:10: fatal error: net/if.h: No such file or directory
+    1 | #include <net/if.h>
+      |          ^~~~~~~~~~
+compilation terminated.
+ninja: build stopped: subcommand failed.
+
+
+Source file was:
+#include <net/if.h>
+                         int main(void)
+                         {
+                           int i = SO_BINDTODEVICE;
+                         }
+Performing C SOURCE FILE Test NO_LFS_REQUIRED failed with the following output:
+Change Dir: /tmp_amd/kamen/export/kamen/1/z5284381/comp9242/group-08/build_limited/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/home/cs9242/bin/ninja cmTC_c9d03 && [1/2] Building C object CMakeFiles/cmTC_c9d03.dir/src.c.obj
+FAILED: CMakeFiles/cmTC_c9d03.dir/src.c.obj 
+/home/cs9242/crossdev/gcc-9-aarch64-none-linux-gnu/bin/aarch64-linux-gnu-gcc --sysroot=/tmp_amd/kamen/export/kamen/1/z5284381/comp9242/group-08/build_limited/CMakeFiles/CMakeTmp   -march=armv8-a+crc   -D__KERNEL_64__ -DNO_LFS_REQUIRED   -std=gnu11 -o CMakeFiles/cmTC_c9d03.dir/src.c.obj   -c src.c
+src.c:1:10: fatal error: sys/types.h: No such file or directory
+    1 | #include <sys/types.h>
+      |          ^~~~~~~~~~~~~
+compilation terminated.
+ninja: build stopped: subcommand failed.
+
+
+Source file was:
+#include <sys/types.h>
+                         #define LARGE_OFF_T (((off_t) 1 << 62) - 1 + ((off_t) 1 << 62))
+                         int off_t_is_large[(LARGE_OFF_T % 2147483629 == 721 && LARGE_OFF_T % 2147483647 == 1) ? 1 : -1];
+                         int main()
+                         {
+                           return 0;
+                         }
+Performing C SOURCE FILE Test _FILE_OFFSET_BITS failed with the following output:
+Change Dir: /tmp_amd/kamen/export/kamen/1/z5284381/comp9242/group-08/build_limited/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/home/cs9242/bin/ninja cmTC_d8f92 && [1/2] Building C object CMakeFiles/cmTC_d8f92.dir/src.c.obj
+FAILED: CMakeFiles/cmTC_d8f92.dir/src.c.obj 
+/home/cs9242/crossdev/gcc-9-aarch64-none-linux-gnu/bin/aarch64-linux-gnu-gcc --sysroot=/tmp_amd/kamen/export/kamen/1/z5284381/comp9242/group-08/build_limited/CMakeFiles/CMakeTmp   -march=armv8-a+crc   -D__KERNEL_64__ -D_FILE_OFFSET_BITS   -std=gnu11 -o CMakeFiles/cmTC_d8f92.dir/src.c.obj   -c src.c
+src.c:1:10: fatal error: sys/types.h: No such file or directory
+    1 | #include <sys/types.h>
+      |          ^~~~~~~~~~~~~
+compilation terminated.
+ninja: build stopped: subcommand failed.
+
+
+Source file was:
+#include <sys/types.h>
+                           #define _FILE_OFFSET_BITS 64
+                           #define LARGE_OFF_T (((off_t) 1 << 62) - 1 + ((off_t) 1 << 62))
+                           int off_t_is_large[(LARGE_OFF_T % 2147483629 == 721 && LARGE_OFF_T % 2147483647 == 1) ? 1 : -1];
+                           int main()
+                           {
+                             return 0;
+                           }
+Performing C SOURCE FILE Test _LARGE_FILES failed with the following output:
+Change Dir: /tmp_amd/kamen/export/kamen/1/z5284381/comp9242/group-08/build_limited/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/home/cs9242/bin/ninja cmTC_43952 && [1/2] Building C object CMakeFiles/cmTC_43952.dir/src.c.obj
+FAILED: CMakeFiles/cmTC_43952.dir/src.c.obj 
+/home/cs9242/crossdev/gcc-9-aarch64-none-linux-gnu/bin/aarch64-linux-gnu-gcc --sysroot=/tmp_amd/kamen/export/kamen/1/z5284381/comp9242/group-08/build_limited/CMakeFiles/CMakeTmp   -march=armv8-a+crc   -D__KERNEL_64__ -D_LARGE_FILES   -std=gnu11 -o CMakeFiles/cmTC_43952.dir/src.c.obj   -c src.c
+src.c:1:10: fatal error: sys/types.h: No such file or directory
+    1 | #include <sys/types.h>
+      |          ^~~~~~~~~~~~~
+compilation terminated.
+ninja: build stopped: subcommand failed.
+
+
+Source file was:
+#include <sys/types.h>
+                           #define _LARGE_FILES 1
+                           #define LARGE_OFF_T (((off_t) 1 << 62) - 1 + ((off_t) 1 << 62))
+                           int off_t_is_large[(LARGE_OFF_T % 2147483629 == 721 && LARGE_OFF_T % 2147483647 == 1) ? 1 : -1];
+                           int main()
+                           {
+                             return 0;
+                           }
+Determining if the makedev exist failed with the following output:
+Change Dir: /tmp_amd/kamen/export/kamen/1/z5284381/comp9242/group-08/build_limited/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/home/cs9242/bin/ninja cmTC_f0708 && [1/2] Building C object CMakeFiles/cmTC_f0708.dir/CheckSymbolExists.c.obj
+FAILED: CMakeFiles/cmTC_f0708.dir/CheckSymbolExists.c.obj 
+/home/cs9242/crossdev/gcc-9-aarch64-none-linux-gnu/bin/aarch64-linux-gnu-gcc --sysroot=/tmp_amd/kamen/export/kamen/1/z5284381/comp9242/group-08/build_limited/CMakeFiles/CMakeTmp   -march=armv8-a+crc   -D__KERNEL_64__ -o CMakeFiles/cmTC_f0708.dir/CheckSymbolExists.c.obj   -c CheckSymbolExists.c
+CheckSymbolExists.c:2:10: fatal error: sys/mkdev.h: No such file or directory
+    2 | #include <sys/mkdev.h>
+      |          ^~~~~~~~~~~~~
+compilation terminated.
+ninja: build stopped: subcommand failed.
+
+
+File /tmp_amd/kamen/export/kamen/1/z5284381/comp9242/group-08/build_limited/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <sys/mkdev.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef makedev
+  return ((int*)(&makedev))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the makedev exist failed with the following output:
+Change Dir: /tmp_amd/kamen/export/kamen/1/z5284381/comp9242/group-08/build_limited/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/home/cs9242/bin/ninja cmTC_be5e1 && [1/2] Building C object CMakeFiles/cmTC_be5e1.dir/CheckSymbolExists.c.obj
+FAILED: CMakeFiles/cmTC_be5e1.dir/CheckSymbolExists.c.obj 
+/home/cs9242/crossdev/gcc-9-aarch64-none-linux-gnu/bin/aarch64-linux-gnu-gcc --sysroot=/tmp_amd/kamen/export/kamen/1/z5284381/comp9242/group-08/build_limited/CMakeFiles/CMakeTmp   -march=armv8-a+crc   -D__KERNEL_64__ -o CMakeFiles/cmTC_be5e1.dir/CheckSymbolExists.c.obj   -c CheckSymbolExists.c
+CheckSymbolExists.c:2:10: fatal error: sys/sysmacros.h: No such file or directory
+    2 | #include <sys/sysmacros.h>
+      |          ^~~~~~~~~~~~~~~~~
+compilation terminated.
+ninja: build stopped: subcommand failed.
+
+
+File /tmp_amd/kamen/export/kamen/1/z5284381/comp9242/group-08/build_limited/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <sys/sysmacros.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef makedev
+  return ((int*)(&makedev))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}

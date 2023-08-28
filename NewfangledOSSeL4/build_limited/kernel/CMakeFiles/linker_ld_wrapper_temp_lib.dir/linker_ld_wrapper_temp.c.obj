@@ -1,0 +1,382 @@
+/*
+ * Copyright 2020, Data61, CSIRO (ABN 41 687 119 230)
+ *
+ * SPDX-License-Identifier: GPL-2.0-only
+ */
+/*
+ * Copyright 2020, Data61, CSIRO (ABN 41 687 119 230)
+ *
+ * SPDX-License-Identifier: GPL-2.0-only
+ */
+       
+/*
+ * Copyright 2014, General Dynamics C4 Systems
+ *
+ * SPDX-License-Identifier: BSD-2-Clause
+ */
+       
+/* Compile-time configuration parameters. Might be set by the build system. */
+       
+       
+/* size of the initial thread's root CNode (2^x slots, x >= 4) */
+/* number of timer ticks until a thread is preempted  */
+/* the number of scheduler domains */
+/* number of priorities per domain */
+/* maximum number of caps that can be created in one retype invocation */
+/* chunk size for memory clears during retype, in bits. */
+/* maximum number of iterations until we preempt a delete/revoke invocation */
+/* address range to flush per preemption work unit */
+/* maximum number of untyped caps in bootinfo */
+/* WARNING: must match value in libsel4! */
+/* CONSTRAINT: (16 * CONFIG_MAX_NUM_BOOTINFO_DEVICE_REGIONS) + (5 * CONFIG_MAX_NUM_BOOTINFO_UNTYPED_CAPS) <= 4036 */
+/* maximum number of different tracepoints which can be placed in the kernel */
+/* maximum number of IOMMU RMRR entries we can record while ACPI parsing */
+/* maximum number of IOAPIC supported */
+/* Alias CONFIG_MAX_NUM_NODES > 1 to ENABLE_SMP_SUPPORT */
+/* Configurations requring the kernel log buffer */
+/*
+ * Copyright 2014, General Dynamics C4 Systems
+ *
+ * SPDX-License-Identifier: GPL-2.0-only
+ */
+       
+/* Each architecture defines a set of constants in #defines. These
+ * constants describe the memory regions of the kernel's portion of the
+ * address space including the physical memory window, the kernel ELF
+ * region, and the device region.
+ *
+ *  - USER_TOP: The first address after the end of user memory
+ *
+ *  - PADDR_BASE: The first physical address mapped in the kernel's
+ *    physical memory window.
+ *  - PPTR_BASE: The first virtual address of the kernel's physical
+ *    memory window.
+ *  - PPTR_TOP: The first virtual address after the end of the kernel's
+ *    physical memory window.
+ *
+ *  - KERNEL_ELF_PADDR_BASE: The first physical address used to map the
+ *    initial kernel image. The kernel ELF is mapped contiguously
+ *    starting at this address.
+ *  - KERNEL_ELF_BASE: The first virtual address used to map the initial
+ *    kernel image.
+ *
+ *  - KDEV_BASE: The first virtual address used to map devices.
+ */
+/* The offset from a physical address to a virtual address in the
+ * physical memory window. */
+/* The last address in the physical memory region mapped into the
+ * physical memory window */
+/* The kernel base offset is a way to translate the kernel image segment
+ * from virtual to physical. This translation must be a single offset
+ * for for the entire segment (i.e. the kernel image must be contiguous
+ * both virtually and physically) */
+/*
+ * Copyright 2020, Data61, CSIRO (ABN 41 687 119 230)
+ *
+ * SPDX-License-Identifier: GPL-2.0-only
+ */
+       
+/*
+ * Copyright 2014, General Dynamics C4 Systems
+ *
+ * SPDX-License-Identifier: GPL-2.0-only
+ */
+       
+/* time constants */
+/* Some assemblers don't recognise ul (unsigned long) suffix */
+/*
+ * Copyright 2014, General Dynamics C4 Systems
+ *
+ * SPDX-License-Identifier: GPL-2.0-only
+ */
+       
+/*
+ * Copyright 2020, Data61, CSIRO (ABN 41 687 119 230)
+ *
+ * SPDX-License-Identifier: GPL-2.0-only
+ */
+       
+/*
+ * Copyright 2020, Data61, CSIRO (ABN 41 687 119 230)
+ *
+ * SPDX-License-Identifier: BSD-2-Clause
+ */
+       
+/*
+ * Copyright 2020, Data61, CSIRO (ABN 41 687 119 230)
+ *
+ * SPDX-License-Identifier: BSD-2-Clause
+ */
+       
+/*
+ * Some compilers attempt to pack enums into the smallest possible type.
+ * For ABI compatibility with the kernel, we need to ensure they remain
+ * the same size as a 'long'.
+ */
+/* object sizes - 2^n */
+/* word size */
+/* Untyped size limits */
+/* IPC buffer is 1024 bytes, giving size bits of 10 */
+/* First address in the virtual address space that is not accessible to user level */
+/* Control register fields */
+/*
+ * Copyright 2020, Data61, CSIRO (ABN 41 687 119 230)
+ *
+ * SPDX-License-Identifier: BSD-2-Clause
+ */
+       
+/* Cortex A53 manual, section 11.6.1 */
+/* EL2 kernel address map:
+ *
+ * The EL2 mode kernel uses TTBR0_EL2 which covers the range of
+ * 0x0 - 0x0000ffffffffffff (48 bits of vaddrspace).
+ *
+ * The CPU on the TX1 only allows for 48-bits of addressable virtual memory.
+ * Within the seL4 EL2 kernel's separate vaddrspace, it uses
+ * the 512 GiB at the top of that 48 bits of addressable
+ * virtual memory.
+ *
+ * In EL2 there is no canonical-high portion of the address space since
+ * address tagging is not supported in EL2. Therefore the kernel is linked
+ * to the canonical lower portion of the address space (all the unused top bits
+ * are set to 0, not 1).
+ *
+ * The memory map used by the EL2 kernel's separate address space
+ * ends up looking something like this:
+ *
+ * +-----------------------------------+ <- 0xFFFFFFFF_FFFFFFFF
+ * | Canonical high portion - unusable |
+ * | virtual addrs                     |
+ * +-----------------------------------+ <- PPTR_TOP: 256TiB mark (top of 48 bits)
+ * | seL4 EL2 kernel                   |    ^
+ * |                                   |    |
+ * |                                   |    512GiB
+ * |                                   |    of EL2 kernel windowing
+ * |                                   |    into memory.
+ * |                                   |    |
+ * |                                   |    v
+ * +-----------------------------------+ <- PPTR_BASE: 256TiB minus 512GiB.
+ * | Unused virtual addresses within   |    ^
+ * | the EL2 kernel's                  |    |
+ * | separate vaddrspace.              |    Rest of the
+ * |                                   |    EL2 kernel
+ * |                                   |    vaddrspace, unused,
+ * |                                   |    which is the rest of
+ * |                                   |    the lower 256 TiB.
+ * |                                   |    |
+ * |                                   |    v
+ * +-----------------------------------+ <- 0x0
+ *
+ * !defined(CONFIG_ARM_HYPERVISOR_SUPPORT)
+ *
+ *          2^64 +-------------------+
+ *               | Kernel Page PDPT  | --+
+ *   2^64 - 2^39 +-------------------+ PPTR_BASE
+ *               |    TLB Bitmaps    |   |
+ *               +-------------------+   |
+ *               |                   |   |
+ *               |     Unmapped      |   |
+ *               |                   |   |
+ *   2^64 - 2^48 +-------------------+   |
+ *               |                   |   |
+ *               |   Unaddressable   |   |
+ *               |                   |   |
+ *          2^48 +-------------------+ USER_TOP
+ *               |                   |   |
+ *               |       User        |   |
+ *               |                   |   |
+ *           0x0 +-------------------+   |
+ *                                       |
+ *                         +-------------+
+ *                         |
+ *                         v
+ *          2^64 +-------------------+ PPTR_BASE
+ *               |                   |
+ *               |                   |     +------+
+ *               | Kernel Page Table | --> |  PD  | ----+
+ *               |                   |     +------+     |
+ *               |                   |                  |
+ *   2^64 - 2^30 +-------------------+ PPTR_TOP         |
+ *               |                   |                  |
+ *               |  Physical Memory  |                  |
+ *               |       Window      |                  |
+ *               |                   |                  |
+ *               +-------------------+                  |
+ *               |                   |                  |
+ *               |                   |     +------+     |
+ *               |    Kernel ELF     | --> |  PD  |     |
+ *               |                   |     +------+     |
+ *               |                   |                  |
+ *               +-------------------+ KERNEL_ELF_BASE  |
+ *               |                   |                  |
+ *               |  Physical Memory  |                  |
+ *               |       Window      |                  |
+ *               |                   |                  |
+ *   2^64 - 2^39 +-------------------+                  |
+ *                                                      |
+ *                                +---------------------+
+ *                                |
+ *                                v
+ *   2^64 - 2^21 + 2^12 +-------------------+
+ *                      |                   |
+ *                      |  Kernel Devices   |
+ *                      |                   |
+ *          2^64 - 2^21 +-------------------+ KDEV_BASE
+ *
+ *
+ * defined(CONFIG_ARM_HYPERVISOR_SUPPORT)
+ *
+ *          2^64 +-------------------+
+ *               |                   |
+ *               |   Unaddressable   |
+ *               |                   |
+ *          2^48 +-------------------+
+ *               | Kernel Page PDPT  | --+
+ *   2^48 - 2^39 +-------------------+ PPTR_BASE
+ *               |    TLB Bitmaps    |   |
+ *               +-------------------+   |
+ *               |                   |   |
+ *               |     Unmapped      |   |
+ *               |                   |   |
+ *           0x0 +-------------------+   |
+ *                                       |
+ *                         +-------------+
+ *                         |
+ *                         v
+ *          2^48 +-------------------+
+ *               |                   |
+ *               |                   |     +------+
+ *               | Kernel Page Table | --> |  PD  | ----+
+ *               |                   |     +------+     |
+ *               |                   |                  |
+ *   2^48 - 2^30 +-------------------+ PPTR_TOP         |
+ *               |                   |                  |
+ *               |  Physical Memory  |                  |
+ *               |       Window      |                  |
+ *               |                   |                  |
+ *               +-------------------+                  |
+ *               |                   |                  |
+ *               |                   |     +------+     |
+ *               |    Kernel ELF     | --> |  PD  |     |
+ *               |                   |     +------+     |
+ *               |                   |                  |
+ *               +-------------------+ KERNEL_ELF_BASE  |
+ *               |                   |                  |
+ *               |  Physical Memory  |                  |
+ *               |       Window      |                  |
+ *               |                   |                  |
+ *   2^48 - 2^39 +-------------------+ PPTR_BASE        |
+ *                                                      |
+ *                                +---------------------+
+ *                                |
+ *                                v
+ *   2^48 - 2^21 + 2^12 +-------------------+
+ *                      |                   |
+ *                      |  Kernel Devices   |
+ *                      |                   |
+ *          2^48 - 2^21 +-------------------+ KDEV_BASE
+ *
+ */
+/* last accessible virtual address in user space */
+/* The first physical address to map into the kernel's physical memory
+ * window */
+/* The base address in virtual memory to use for the 1:1 physical memory
+ * mapping */
+/* Top of the physical memory window */
+/* The physical memory address to use for mapping the kernel ELF */
+/* The base address in virtual memory to use for the kernel ELF mapping */
+/* This is a page table mapping at the end of the virtual address space
+ * to map objects with 4KiB pages rather than 4MiB large pages. */
+/* The base address in virtual memory to use for the kernel device
+ * mapping region. These are mapped in the kernel page table. */
+/* The log buffer is placed before the device region */
+/*
+ * Copyright 2020, Data61, CSIRO (ABN 41 687 119 230)
+ *
+ * SPDX-License-Identifier: GPL-2.0-only
+ */
+/*
+ * This file is autogenerated by kernel/tools/hardware_gen.py.
+ */
+/*
+ * Copyright 2014, General Dynamics C4 Systems
+ *
+ * SPDX-License-Identifier: GPL-2.0-only
+ */
+       
+/*
+ * Copyright 2020, Data61, CSIRO (ABN 41 687 119 230)
+ *
+ * SPDX-License-Identifier: BSD-2-Clause
+ */
+       
+/* Place-holder for ARM-related linker definitions */
+/* code that is only used during kernel bootstrapping */
+/* read-only data only used during kernel bootstrapping */
+/* read/write data only used during kernel bootstrapping */
+/* node-local bss data that is only used during kernel bootstrapping */
+/* data will be aligned to n bytes in a special BSS section */
+/* data that will be mapped into and permitted to be used in the restricted SKIM
+ * address space */
+/* bss data that is permitted to be used in the restricted SKIM address space */
+/* INTERRUPTS */
+/* INTERRUPT_VGIC_MAINTENANCE generated from /soc/interrupt-controller@c4301000 */
+/* INTERRUPT_VTIMER_EVENT generated from /timer */
+/* KERNEL_TIMER_IRQ generated from /timer */
+/* KERNEL_UART_IRQ generated from /soc/bus@c8100000/serial@4c0 */
+/* KERNEL DEVICES */
+ENTRY(_start)
+KERNEL_OFFSET = ((0xffffff8000000000 - 0x0) + 0x1000000) - 0x1000000;
+SECTIONS
+{
+    . = ((0xffffff8000000000 - 0x0) + 0x1000000);
+    .boot . : AT(ADDR(.boot) - KERNEL_OFFSET)
+    {
+        *(.boot.text)
+        *(.boot.rodata)
+        *(.boot.data)
+        . = ALIGN(64K);
+    }
+    ki_boot_end = .;
+    .text . : AT(ADDR(.text) - KERNEL_OFFSET)
+    {
+        /* Sit inside a large frame */
+        . = ALIGN(64K);
+        *(.vectors)
+        /* Fastpath code */
+        *(.vectors.fastpath_call)
+        *(.vectors.fastpath_reply_recv)
+        *(.vectors.text)
+        /* Anything else that should be in the vectors page. */
+        *(.vectors.*)
+        /* Hopefully all that fits into 4K! */
+        /* Standard kernel */
+        *(.text)
+    }
+    .rodata . : AT(ADDR(.rodata) - KERNEL_OFFSET)
+    {
+        *(.rodata)
+        *(.rodata.*)
+    }
+    .data . : AT(ADDR(.data) - KERNEL_OFFSET)
+    {
+        *(.data)
+    }
+    .bss . : AT(ADDR(.bss) - KERNEL_OFFSET)
+    {
+        *(.bss)
+        /* 4k breakpoint stack */
+        _breakpoint_stack_bottom = .;
+        . = . + 4K;
+        _breakpoint_stack_top = .;
+        /* large data such as the globals frame and global PD */
+        *(.bss.aligned)
+    }
+    . = ALIGN(4K);
+    ki_end = .;
+    /DISCARD/ :
+    {
+        *(.note.gnu.build-id)
+        *(.comment)
+    }
+}

@@ -1,0 +1,40 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/tmp_amd/kamen/export/kamen/1/z5284381/comp9242/group-08/build/projects/libpicotcp/CMakeFiles/picotcp_external-install"
+		},
+		{
+			"file" : "/tmp_amd/kamen/export/kamen/1/z5284381/comp9242/group-08/build/projects/libpicotcp/CMakeFiles/picotcp_external-install.rule"
+		},
+		{
+			"file" : "/tmp_amd/kamen/export/kamen/1/z5284381/comp9242/group-08/build/projects/libpicotcp/picotcp_external-prefix/src/picotcp_external-stamp/picotcp_external-install.rule"
+		},
+		{
+			"file" : "/tmp_amd/kamen/export/kamen/1/z5284381/comp9242/group-08/build/projects/libpicotcp/picotcp_external-prefix/src/picotcp_external-stamp/picotcp_external-build.rule"
+		},
+		{
+			"file" : "/tmp_amd/kamen/export/kamen/1/z5284381/comp9242/group-08/build/projects/libpicotcp/picotcp_external-prefix/src/picotcp_external-stamp/picotcp_external-configure.rule"
+		},
+		{
+			"file" : "/tmp_amd/kamen/export/kamen/1/z5284381/comp9242/group-08/build/projects/libpicotcp/picotcp_external-prefix/src/picotcp_external-stamp/picotcp_external-update.rule"
+		},
+		{
+			"file" : "/tmp_amd/kamen/export/kamen/1/z5284381/comp9242/group-08/build/projects/libpicotcp/picotcp_external-prefix/src/picotcp_external-stamp/picotcp_external-patch.rule"
+		},
+		{
+			"file" : "/tmp_amd/kamen/export/kamen/1/z5284381/comp9242/group-08/build/projects/libpicotcp/picotcp_external-prefix/src/picotcp_external-stamp/picotcp_external-download.rule"
+		},
+		{
+			"file" : "/tmp_amd/kamen/export/kamen/1/z5284381/comp9242/group-08/build/projects/libpicotcp/picotcp_external-prefix/src/picotcp_external-stamp/picotcp_external-mkdir.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"picotcp_external"
+		],
+		"name" : "picotcp_external-install"
+	}
+}
