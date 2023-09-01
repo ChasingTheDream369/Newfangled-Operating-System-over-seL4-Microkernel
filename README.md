@@ -1,5 +1,3 @@
-## Newfangled-Operating-System-over-seL4-Microkernel
-
 <!-- Header Section -->
 <p align="center">
   <img src="os_logo.png" alt="Operating System Logo" width="200">
