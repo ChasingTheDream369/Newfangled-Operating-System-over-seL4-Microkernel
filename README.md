@@ -129,11 +129,11 @@ Ready to dive into SOS? Follow these steps to get started:
    ```
 2. **Build and Install**:
 
-  ```bash
-  cd Newfangled-Operating-System-over-seL4-Microkernel
-  make build
-  make install
-  ```
+   ```bash
+   cd Newfangled-Operating-System-over-seL4-Microkernel
+   make build
+   make install
+   ```
 
 3. **Run SOS**:
 
