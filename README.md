@@ -1,4 +1,4 @@
-# OS for seL4
+# seL4 OS
 
 An experimental operating system built on the seL4 microkernel, focused on concurrent execution, process management, virtual memory, and low-level systems programming.
 
